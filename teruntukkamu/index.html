@@ -33,7 +33,7 @@ body::before{content:"\00A9  Andri Omelet";padding:8px;border-radius:12px;backgr
 @keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
 blockquote{opacity:0;visibility:hidden;transition:all 1s ease;position:relative;margin-left:0;margin-right:0;}
 blockquote{width:400px;min-height:30px;background:none;color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;line-height:1.3em;padding:25px;border: 0px solid var(--warna-bingkai);border-radius:var(--bingkai);}
-.awalan{margin-top:20px;width:250px;min-height:25px;padding:12px;font-size:13px;color:white;background:rgba(0,0,0,.5);border:1px solid #fff;border-radius:20px;display:flex;align-items:center;text-align:left}
+.awalan{margin-top:20px;width:250px;text-align: center;min-height:25px;padding:12px;font-size:13px;color:white;background:rgba(0,0,0,.5);border:1px solid #fff;border-radius:20px;display:flex;align-items:center;text-align:left}
 .awalan svg{margin-right:15px;width:25px;height:25px;stroke:white}
 p{opacity:0;color:var(--warna-teks);font-size:15px;font-weight:700;line-height:1.4em;margin:0px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);transform: scale(.1);transition:all .3s ease;}
 #text-container{opacity:1;transform: scale(1);}
@@ -94,10 +94,9 @@ p{opacity:0;color:var(--warna-teks);font-size:15px;font-weight:700;line-height:1
 
    <div id='Content'>
    	
-   <p id="ket">Kirim video ini ke pasanganmu <3</p>
+   <p id="ket">Dari ku Untukmu <3</p>
    <div><div id="loveIn" class="awalan">
-     <svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.000000, 2.000000)'><path d='M9.27542857,0.714285714 C14.0030476,0.714285714 17.836381,4.54666667 17.836381,9.2752381 C17.836381,14.0038095 14.0030476,17.8361905 9.27542857,17.8361905 C4.54685714,17.8361905 0.71447619,14.0038095 0.71447619,9.2752381 C0.71447619,4.54666667 4.54685714,0.714285714 9.27542857,0.714285714 Z'></path><path d='M17.8989524,16.487619 C18.678,16.487619 19.3094286,17.12 19.3094286,17.8980952 C19.3094286,18.6780952 18.678,19.3095238 17.8989524,19.3095238 C17.1199048,19.3095238 16.4875238,18.6780952 16.4875238,17.8980952 C16.4875238,17.12 17.1199048,16.487619 17.8989524,16.487619 Z'></path></g></svg>
-     <label>S.id/teruntuk-kamu</label>
+     <label style="text-align: center;margin: auto;">Teruntuk-kamu</label>
    </div></div>
 
    <!-- Foto Atas --><div><img id="fotosatu" src=""/><img id="fotodua" src=""/><img id="fototiga" src=""/><img id="fotoempat" src=""/><img id="fotolima" src=""/><img id="fotoenam" src=""/><img id="fototujuh" src=""/><img id="fotodelapan" src=""/><img id="fotosembilan" src=""/></div>
@@ -234,7 +233,7 @@ window.addEventListener("load", (event) => {
 
 <script type="text/javascript">
 
-       async function menuju(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+       async function menuju(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=6282218965846&text=" + pesanwhatsapp;}
 
        async function jawab(){
            var { value: jawaban } = await swals.fire({

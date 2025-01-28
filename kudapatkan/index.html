@@ -25,7 +25,7 @@ di background-image URL --><style>
 }
 @keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
 body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
-body::before{bottom:25px;left:25px;content:"\00A9  feelthisray (formerly Rayys)";padding:8px;border-radius:12px;background:black;color:white;opacity:.7;font-size:11px;position:fixed;z-index:999}
+body::before{bottom:25px;left:25px;content:"\00A9  Drii an Dri";padding:8px;border-radius:12px;background:black;color:white;opacity:.7;font-size:11px;position:fixed;z-index:999}
 #bodyblur{opacity:.6;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;} 
 #wallpaper{width:100%;height:100%;transition:all 2s ease;}
 #beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px);transition:all 3s ease;}
@@ -191,7 +191,7 @@ p{font-size:18px;font-weight:400;line-height:1.4em;/*text-shadow: 0px 2px 2px rg
   
   function multifungsi(){if(ftom==1){dilanjut();} if(ftom==2){diterima();} if(ftom==5){menuju();}}
   
-  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=6282218965846&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
 
   const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
 
